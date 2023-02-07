@@ -3,19 +3,35 @@
   <head>
     <title>BirdsLineView</title>
     <style>
+      .background-rectangle {
+        background-color: rgb(179, 211, 162);
+        height: 200px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+      }
+
       .fixed-image {
         position: fixed;
         top: 20px;
-        left: 20px;
-        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 232.5px;
+        height: 160.5px;
+        z-index: 2;
       }
     </style>
   </head>
   <body>
     <div style="display: flex; flex-direction: column; align-items: center">
-      <body style="background-color: rgb(90, 150, 90)"></body>
-      <img src="images/logo.png" class="fixed-image" />
-      <div style="margin-bottom: 150px"></div>
+      <body style="background-color: rgb(179, 211, 162)"></body>
+      <div class="background-rectangle">
+        <img src="images/logo.png" class="fixed-image" />
+      </div>
+      <div style="margin-bottom: 220px"></div>
       <button
         style="
           background-image: url(images/harpers.png);
