@@ -3,19 +3,6 @@
   <head>
     <title>BirdsLineView</title>
     <style>
-      /* The default styles for all devices */
-      .container {
-        width: 80%;
-        margin: 0 auto;
-      }
-
-      /* The styles for devices with a viewport width of less than 768px */
-      @media (max-width: 768px) {
-        .container {
-          width: 100%;
-        }
-      }
-
       .background-rectangle {
         background-color: rgb(179, 211, 162);
         height: 200px;
@@ -36,6 +23,26 @@
         height: 160.5px;
         z-index: 2;
       }
+      button {
+        background-image: url(images/harpers.png);
+        border: none;
+        background-size: cover;
+        padding: 80px 120px;
+        color: white;
+        font-family: sans-serif;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #2b622d; /* Darker green background on hover */
+        transform: translateY(-2px); /* Move button up */
+        box-shadow: 2px 2px 5px rgba(0, 128, 0, 0.9); /* Add a shadow effect */
+      }
+
+      button:active {
+        background-color: #3e8e41; /* Same color as hover */
+        transform: translateY(2px); /* Move button down */
+      }
     </style>
   </head>
   <body>
@@ -45,54 +52,19 @@
         <img src="images/logo.png" class="fixed-image" />
       </div>
       <div style="margin-bottom: 220px"></div>
-      <button
-        style="
-          background-image: url(images/harpers.png);
-          background-size: cover;
-          padding: 80px 120px;
-          color: white;
-          font-family: sans-serif;
-          cursor: pointer;
-        "
-        onclick="window.location.href='https://www.google.com'"
-      ></button>
+      <a href="harpersbrewpub.html">
+        <button
+          style="background-image: url(images/harpers.png)"
+          onclick="window.location.href='https://www.google.com'"
+          class="button-style"
+        ></button>
+      </a>
       <div style="margin-bottom: 50px"></div>
       <button
-        style="
-          background-image: url(images/logoRIV.png);
-          background-size: cover;
-          padding: 80px 120px;
-          color: white;
-          font-family: sans-serif;
-          cursor: pointer;
-        "
+        style="background-image: url(images/logoRIV.png)"
         onclick="window.location.href='https://www.google.com'"
-      ></button>
-      <div style="margin-bottom: 50px"></div>
-      <button
-        style="
-          background-image: url(images/PTs.png);
-          background-size: cover;
-          padding: 80px 120px;
-          color: white;
-          font-family: sans-serif;
-          cursor: pointer;
-        "
-        onclick="window.location.href='https://www.google.com'"
-      ></button>
-      <div style="margin-bottom: 50px"></div>
-      <button
-        style="
-          background-image: url(images/tincan.jpg);
-          background-size: cover;
-          padding: 80px 120px;
-          color: white;
-          font-family: sans-serif;
-          cursor: pointer;
-        "
-        onclick="window.location.href='https://www.google.com'"
+        class="button-style"
       ></button>
     </div>
   </body>
 </html>
-
