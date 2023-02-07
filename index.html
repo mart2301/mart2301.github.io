@@ -3,6 +3,19 @@
   <head>
     <title>BirdsLineView</title>
     <style>
+      /* The default styles for all devices */
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      /* The styles for devices with a viewport width of less than 768px */
+      @media (max-width: 768px) {
+        .container {
+          width: 100%;
+        }
+      }
+
       .background-rectangle {
         background-color: rgb(179, 211, 162);
         height: 200px;
@@ -75,10 +88,11 @@
           padding: 80px 120px;
           color: white;
           font-family: sans-serif;
-          cursor: pointer; 
+          cursor: pointer;
         "
         onclick="window.location.href='https://www.google.com'"
       ></button>
     </div>
   </body>
 </html>
+
