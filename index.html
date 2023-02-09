@@ -3,6 +3,7 @@
   <head>
     <title>BirdsLineView</title>
     <style>
+      /*code to lower the scroll limit for disapearing elements*/
       .background-rectangle {
         background-color: rgb(179, 211, 162);
         height: 200px;
@@ -13,7 +14,7 @@
         right: 0;
         z-index: 1;
       }
-
+      /*code fo the BLV image at the top*/
       .fixed-image {
         position: fixed;
         top: 20px;
@@ -23,6 +24,7 @@
         height: 160.5px;
         z-index: 2;
       }
+
       button {
         background-image: url(images/harpers.png);
         border: none;
@@ -48,10 +50,13 @@
   <body>
     <div style="display: flex; flex-direction: column; align-items: center">
       <body style="background-color: rgb(179, 211, 162)"></body>
+
       <div class="background-rectangle">
         <img src="images/logo.png" class="fixed-image" />
       </div>
+
       <div style="margin-bottom: 220px"></div>
+
       <a href="harpersbrewpub.html">
         <button
           style="background-image: url(images/harpers.png)"
@@ -59,7 +64,9 @@
           class="button-style"
         ></button>
       </a>
+
       <div style="margin-bottom: 50px"></div>
+
       <button
         style="background-image: url(images/logoRIV.png)"
         onclick="window.location.href='https://www.google.com'"
